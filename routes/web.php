@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\KlubController;
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 Route::get('/input-klub', [KlubController::class, 'inputKlubForm']);
 Route::post('/input-klub', [KlubController::class, 'inputKlub']);
 Route::get('/input-skor', [KlubController::class, 'inputSkorForm']);
