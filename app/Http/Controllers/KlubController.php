@@ -21,6 +21,7 @@ class KlubController extends Controller
         // Simpan data klub ke dalam database
         Club::create([
             'name' => $request->input('name'),
+            'kota' => $request->input('kota'),
         ]);
 
         return redirect('/klasemen');
@@ -69,4 +70,3 @@ class KlubController extends Controller
         return view('klasemen', compact('klasemen'));
     }
 }
-
