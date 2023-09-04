@@ -23,8 +23,11 @@ Route::get('/', function () {
 
 Route::get('/input-klub', [KlubController::class, 'inputKlubForm']);
 Route::post('/input-klub', [KlubController::class, 'inputKlub']);
-Route::get('/input-skor', [KlubController::class, 'inputSkorForm']);
-Route::post('/input-skor', [KlubController::class, 'inputSkor']);
+// Route::get('/input-skor', [KlubController::class, 'inputSkorForm']);
+// Route::post('/input-skor', 'KlubController@inputSkor')->name('inputSkor');
+Route::get('/input-skor', [KlubController::class, 'inputSkorForm'])->name('inputSkorForm');
+Route::post('/input-skor', [KlubController::class, 'inputSkor'])->name('inputSkor');
+
 Route::get('/klasemen', [KlubController::class, 'viewKlasemen']);
 
 // Route dengan Method PUT
