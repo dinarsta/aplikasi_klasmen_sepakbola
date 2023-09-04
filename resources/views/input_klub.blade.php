@@ -1,6 +1,6 @@
 @extends('layout.tampilan')
 @section('content')
-<div class="col-10 m-5">
+<div style="margin: auto" class="col-10">
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">Input Klub</h4>

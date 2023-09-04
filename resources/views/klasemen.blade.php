@@ -1,13 +1,13 @@
 @extends('layout.tampilan')
 @section('content')
-<div class="card col-11 m-2">
+<div style="margin: auto" class="col-10">
     <div class="card-body">
         <h4 class="card-title">Klasmen</h4>
         <p class="card-description">
 
         </p>
         <div class="table-responsive">
-            <table class="table table-bordered">
+            <table class="table table-bordered align="center"">
                 <thead>
                     <tr>
                         <th>Nama Klub</th>
